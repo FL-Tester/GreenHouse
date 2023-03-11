@@ -1,0 +1,52 @@
+"E:\developmentEnvironment\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=E:/mingw64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=E:/developmentEnvironment/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=E:/developmentEnvironment/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" -S C:\Users\A9201\Desktop\TL-MCU1 -B C:\Users\A9201\Desktop\TL-MCU1\cmake-build-debug
+CMake Error at CMakeLists.txt:8 (include):
+  include could not find requested file:
+
+    /tools/cmake/project.cmake
+
+
+-- The C compiler identification is GNU 10.3.1
+-- The CXX compiler identification is GNU 10.3.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: E:/developmentEnvironment/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe
+-- Check for working C compiler: E:/developmentEnvironment/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe - broken
+CMake Error at E:/developmentEnvironment/CLion 2022.1.2/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake:69 (message):
+  The C compiler
+
+    "E:/developmentEnvironment/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/A9201/Desktop/TL-MCU1/cmake-build-debug/CMakeFiles/CMakeTmp
+    
+    Run Build Command(s):E:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_73258/fast && E:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_73258.dir\build.make CMakeFiles/cmTC_73258.dir/build
+    mingw32-make.exe[1]: Entering directory 'C:/Users/A9201/Desktop/TL-MCU1/cmake-build-debug/CMakeFiles/CMakeTmp'
+    Building C object CMakeFiles/cmTC_73258.dir/testCCompiler.c.obj
+    E:\developmentEnvironment\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe    -o CMakeFiles\cmTC_73258.dir\testCCompiler.c.obj -c C:\Users\A9201\Desktop\TL-MCU1\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+    Linking C executable cmTC_73258.exe
+    "E:\developmentEnvironment\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_73258.dir\link.txt --verbose=1
+    "E:\developmentEnvironment\CLion 2022.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_73258.dir/objects.a
+    E:\developmentEnvironment\gcc-arm-none-eabi\bin\arm-none-eabi-ar.exe qc CMakeFiles\cmTC_73258.dir/objects.a @CMakeFiles\cmTC_73258.dir\objects1.rsp
+    E:\developmentEnvironment\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe -Wl,--whole-archive CMakeFiles\cmTC_73258.dir/objects.a -Wl,--no-whole-archive -o cmTC_73258.exe -Wl,--out-implib,libcmTC_73258.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_73258.dir\linklibs.rsp
+    e:/developmentenvironment/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
+    e:/developmentenvironment/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
+    collect2.exe: error: ld returned 1 exit status
+    mingw32-make.exe[1]: *** [CMakeFiles\cmTC_73258.dir\build.make:100: cmTC_73258.exe] Error 1
+    mingw32-make.exe[1]: Leaving directory 'C:/Users/A9201/Desktop/TL-MCU1/cmake-build-debug/CMakeFiles/CMakeTmp'
+    mingw32-make.exe: *** [Makefile:126: cmTC_73258/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:9 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/A9201/Desktop/TL-MCU1/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "C:/Users/A9201/Desktop/TL-MCU1/cmake-build-debug/CMakeFiles/CMakeError.log".

@@ -1,0 +1,33 @@
+{
+    "idf.adapterTargetName": "esp32s3",
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "*.sh": "bat",
+        "gpio.h": "c",
+        "esp_intr_alloc.h": "c",
+        "lv_demos.h": "c",
+        "esp_bit_defs.h": "c",
+        "lv_port_indev_template.h": "c",
+        "lv_port_indev.h": "c",
+        "lv_port_disp.h": "c",
+        "lvgl.h": "c",
+        "freertos.h": "c",
+        "i2c_manager.h": "c",
+        "rc522.h": "c",
+        "user_gpio_init.h": "c",
+        "led_strip.h": "c",
+        "rmt.h": "c",
+        "lvgl_app.h": "c",
+        "*.ipp": "c",
+        "lora.h": "c",
+        "lvgl_helpers.h": "c",
+        "wifi_mqtt.h": "c",
+        "lvgl_user.h": "c",
+        "semphr.h": "c",
+        "esp_spi_flash.h": "c"
+    },
+    "idf.flashType": "UART",
+    "idf.portWin": "COM21"
+}
