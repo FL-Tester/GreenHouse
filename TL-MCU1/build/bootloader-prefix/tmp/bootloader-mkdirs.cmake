@@ -5,15 +5,15 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "C:/Users/A9201/esp/esp-idf/components/bootloader/subproject"
-  "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader"
-  "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix"
-  "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/tmp"
-  "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src"
-  "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp"
+  "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader"
+  "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix"
+  "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/tmp"
+  "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp"
+  "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src"
+  "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()

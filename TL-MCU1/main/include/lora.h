@@ -5,6 +5,7 @@
 #define BUF_SIZE        (1024)
 #define RD_BUF_SIZE     (BUF_SIZE)
 #define lora_buf_size   (10)
+#define recv_data_size  7
 
 void lora_init(void);
 void lora_task(void *pvParameters);

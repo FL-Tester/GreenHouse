@@ -26,8 +26,25 @@
         "wifi_mqtt.h": "c",
         "lvgl_user.h": "c",
         "semphr.h": "c",
-        "esp_spi_flash.h": "c"
+        "esp_spi_flash.h": "c",
+        "main.h": "c",
+        "dataprocess.h": "c",
+        "task.h": "c",
+        "config.h": "c",
+        "esp_netif_ip_addr.h": "c",
+        "nvs_flash.h": "c",
+        "esp_heap_caps.h": "c",
+        "cjson.h": "c",
+        "array": "c",
+        "chrono": "c",
+        "functional": "c",
+        "istream": "c",
+        "ostream": "c",
+        "ratio": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c"
     },
     "idf.flashType": "UART",
-    "idf.portWin": "COM21"
+    "idf.portWin": "COM8"
 }

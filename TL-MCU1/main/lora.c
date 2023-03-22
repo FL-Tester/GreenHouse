@@ -6,6 +6,7 @@
 #include "freertos/queue.h"
 #include "driver/uart.h"
 #include "esp_log.h"
+#include "config.h"
 
 uart_config_t uart_config = {
         .baud_rate = 115200,
@@ -26,7 +27,7 @@ void lora_init(void){
     //Install UART driver, and get the queue.   
     uart_driver_install(LORA_UART_NUM, BUF_SIZE * 2, 2 * BUF_SIZE, 20, &uart0_queue, 0); 
     uart_param_config(LORA_UART_NUM, &uart_config);
-    uart_set_pin(LORA_UART_NUM, 4, 5, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+    uart_set_pin(LORA_UART_NUM, LORA_TX_PIN, LORA_RX_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
     //Set uart pattern detect function.
     uart_enable_pattern_det_baud_intr(LORA_UART_NUM, '+', 4, 9, 0, 0);
     //Reset the pattern queue length to record at most 20 pattern positions.
@@ -34,7 +35,7 @@ void lora_init(void){
 };
 
 //数据读取任务 读取lora数据
-void lora_task(void *pvParameter){
+void lora_task(void *pvParameter){  
     uart_event_t event;
     uint8_t* dtmp = (uint8_t*) malloc(lora_buf_size);
     while(1) {
@@ -42,16 +43,15 @@ void lora_task(void *pvParameter){
             bzero(dtmp, lora_buf_size);
             switch(event.type) {
                 case UART_DATA: 
-                    uart_read_bytes(LORA_UART_NUM, dtmp, event.size, portMAX_DELAY);
-                    printf ("data:%s\n data_size:%d\n",  dtmp, event.size);
-                    xTaskNotify (data_process_task_handle, 0x00, eNoAction);
+                    uart_read_bytes(LORA_UART_NUM, dtmp, RECV_SIZE, portMAX_DELAY);
+                    //printf ("data:%s\n data_size:%d\n",  dtmp, event.size);                  
                     recv_data = dtmp;
                     break;
                 default:
                     break;
             }
+            xTaskNotify (data_process_task_handle, 0x00, eNoAction);
         }
-        vTaskDelay(100 / portTICK_RATE_MS);
     }
     free(dtmp);
     dtmp = NULL;

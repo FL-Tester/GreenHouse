@@ -1,5 +1,4 @@
 #include "lvgl_user.h"
-
 #include <stdio.h>
 #include "sdkconfig.h"
 #include "freertos/FreeRTOS.h"
@@ -11,6 +10,7 @@
 #include "lv_port_indev.h"
 #include "lv_demos.h"
 #include "lvgl_helpers.h"
+#include "lvgl_app.h"
 
 void lv_tick_task(void *arg){
 	(void)arg;
@@ -19,15 +19,13 @@ void lv_tick_task(void *arg){
 
 //lvgl task
 void lvgl_init_task(void *pvParameter){
-    printf("initing lvgl!\n");
+    vTaskDelay(pdMS_TO_TICKS(100));
     lv_init();
-//display
-    lv_port_disp_init();  //
+    lv_port_disp_init();  
     lv_port_indev_init();
     lv_group_t *group = lv_group_create();
     lv_indev_set_group(indev_keypad, group);
 
-//根据配置 判断是否打开触屏选项
 #if CONFIG_LV_TOUCH_CONTROLLER != TOUCH_CONTROLLER_NONE
     lv_indev_drv_t indev_drv;
     lv_indev_drv_init(&indev_drv);
@@ -42,19 +40,13 @@ void lvgl_init_task(void *pvParameter){
     esp_timer_handle_t periodic_timer;
     ESP_ERROR_CHECK(esp_timer_create(&periodic_timer_args, &periodic_timer));
     ESP_ERROR_CHECK(esp_timer_start_periodic(periodic_timer, 10 * 1000));
-    //lv_demo_music();
-    //lv_demo_benchmark(); 
-    //widget_demo();
-    //lv_demo_widgets();
 
-#if 0
-    lv_obj_t *scr = lv_obj_create(NULL);
-    lv_obj_set_size(scr, 320, 240);
-    lv_scr_load(scr);
-#endif
+//user UI
+    user_ui_init();
+    vTaskDelay(pdMS_TO_TICKS(200)); 
     while(1){
         lv_task_handler();
-        //lv_tick_inc(LV_TICK_PERIOD_MS);
+        lv_tick_inc(LV_TICK_PERIOD_MS);
         vTaskDelay(pdMS_TO_TICKS(LV_TICK_PERIOD_MS));
     }
 }

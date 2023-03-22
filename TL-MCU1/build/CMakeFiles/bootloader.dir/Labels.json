@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/CMakeFiles/bootloader"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/CMakeFiles/bootloader.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

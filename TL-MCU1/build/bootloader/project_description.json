@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
     "project_path":       "C:/Users/A9201/esp/esp-idf/components/bootloader/subproject",
-    "build_dir":          "C:/Users/A9201/Desktop/TL-MCU1/build/bootloader",
-    "config_file":        "C:/Users/A9201/Desktop/TL-MCU1/sdkconfig",
+    "build_dir":          "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/bootloader",
+    "config_file":        "E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",

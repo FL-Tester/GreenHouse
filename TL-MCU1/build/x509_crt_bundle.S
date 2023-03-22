@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/A9201/Desktop/TL-MCU1/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

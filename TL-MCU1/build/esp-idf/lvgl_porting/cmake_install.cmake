@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/A9201/Desktop/TL-MCU1/components/lvgl_porting
+# Install script for directory: E:/chromedown/GreenHouse-main/GreenHouse-main/TL-MCU1/components/lvgl_porting
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
